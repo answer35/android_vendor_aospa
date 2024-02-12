@@ -19,10 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Some CTS test case failed after enabling feature config_stopSystemPackagesByDefault
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
-# Abstruct
-PRODUCT_PACKAGES += \
-    Abstruct
-
 # AOSPA Version.
 $(call inherit-product, vendor/aospa/target/product/version.mk)
 
@@ -108,6 +104,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0.vendor
+
+# InnerTune
+PRODUCT_PACKAGES += \
+    InnerTune
 
 # Java Optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
 # Volume panel dialog - SystemUI
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
+
+# WallMan
+PRODUCT_PACKAGES += \
+    WallMan
 
 # WiFi
 PRODUCT_PACKAGES += \
