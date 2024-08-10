@@ -41,6 +41,17 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
     </string-array>
 
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>MANUFACTURER:Nothing</item>
+        <item>BRAND:Nothing</item>
+        <item>DEVICE:Spacewar</item>
+        <item>PRODUCT:SpacewarEEA</item>
+        <item>MODEL:A063</item>
+        <item>FINGERPRINT:Nothing/SpacewarEEA/Spacewar:12/SKQ1.211230.001/1657910681:user/release-keys</item>
+        <item>SECURITY_PATCH:2022-07-01</item>
+        <item>FIRST_API_LEVEL:25</item>
+    </string-array>
+
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 

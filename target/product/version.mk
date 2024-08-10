@@ -56,8 +56,6 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.somethingos.version=$(SOMETHINGOS_VERSION)
 
-$(call inherit-product, vendor/something/certification/certification.mk)
-
 # Add BUILD_DATE for zip naming
 AOSPA_VERSION += $(AOSPA_BUILD)-$(BUILD_DATE)
 
